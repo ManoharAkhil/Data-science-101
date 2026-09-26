@@ -1,0 +1,262 @@
+@import 'tailwindcss';
+
+/*
+  Design tokens. One theme (dark stage), one accent (lime).
+  Radius rule: surfaces 20px, interactive controls full pill.
+  Z-index scale: content 0, nav 40, cursor 60, grain 70.
+*/
+@theme {
+  --color-bg: #0e100c;
+  --color-bg-2: #171a13;
+  --color-bg-3: #20241a;
+  --color-ink: #ecefe3;
+  --color-muted: #a3a998;
+  --color-dim: #8b9180;
+  --color-line: rgb(236 239 227 / 0.12);
+  --color-accent: #d4ff3f;
+  --color-accent-ink: #0e100c;
+
+  --font-sans: 'Instrument Sans Variable', ui-sans-serif, system-ui, sans-serif;
+  --font-mono: 'JetBrains Mono', ui-monospace, monospace;
+
+  --radius-surface: 20px;
+  --ease-out-expo: cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+@layer base {
+  html {
+    background: var(--color-bg);
+    color: var(--color-ink);
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+  }
+  body {
+    font-family: var(--font-sans);
+    font-variation-settings: 'wdth' 100;
+    overflow-x: clip;
+  }
+  ::selection {
+    background: var(--color-accent);
+    color: var(--color-accent-ink);
+  }
+  :focus-visible {
+    outline: 2px solid var(--color-accent);
+    outline-offset: 4px;
+    border-radius: 999px;
+  }
+}
+
+/* Lenis */
+html.lenis,
+html.lenis body {
+  height: auto;
+}
+.lenis.lenis-smooth {
+  scroll-behavior: auto !important;
+}
+.lenis.lenis-stopped {
+  overflow: hidden;
+}
+
+/* Display type: condensed width axis + tight tracking. Italic of the same
+   family carries emphasis. Descender clearance baked into line-height. */
+.display {
+  font-variation-settings: 'wdth' 82;
+  font-weight: 560;
+  letter-spacing: -0.035em;
+  line-height: 1.02;
+}
+.display em {
+  font-style: italic;
+  font-weight: 480;
+  color: var(--color-accent);
+  padding-right: 0.06em;
+}
+.display-lg {
+  font-size: clamp(2.75rem, 7.2vw, 7.5rem);
+}
+.display-md {
+  font-size: clamp(2.25rem, 5vw, 4.75rem);
+}
+.display-sm {
+  font-size: clamp(1.75rem, 3vw, 2.75rem);
+  line-height: 1.08;
+}
+
+/* Masked line reveal: SplitText wraps lines in .line-mask */
+.line-mask {
+  overflow: clip;
+  padding-bottom: 0.12em;
+  margin-bottom: -0.12em;
+}
+
+/* Tactile pill button */
+.pill {
+  --pill-bg: var(--color-ink);
+  --pill-fg: var(--color-bg);
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.6rem;
+  height: 3.25rem;
+  padding: 0 1.5rem;
+  border-radius: 999px;
+  background: var(--pill-bg);
+  color: var(--pill-fg);
+  font-weight: 560;
+  white-space: nowrap;
+  overflow: hidden;
+  isolation: isolate;
+  box-shadow:
+    inset 0 1px 0 rgb(255 255 255 / 0.35),
+    0 10px 30px -12px rgb(212 255 63 / 0.35);
+  transition:
+    transform 0.25s var(--ease-out-expo),
+    box-shadow 0.25s var(--ease-out-expo),
+    color 0.35s var(--ease-out-expo);
+}
+.pill::before {
+  /* fill that floods in from the cursor side */
+  content: '';
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  background: var(--color-accent);
+  border-radius: inherit;
+  transform: scale(0);
+  transform-origin: var(--fx, 50%) var(--fy, 50%);
+  transition: transform 0.5s var(--ease-out-expo);
+}
+.pill:hover::before {
+  transform: scale(2.2);
+}
+.pill:hover {
+  color: var(--color-accent-ink);
+}
+.pill:active {
+  transform: translateY(1px) scale(0.97);
+  box-shadow:
+    inset 0 2px 6px rgb(0 0 0 / 0.35),
+    0 4px 12px -8px rgb(212 255 63 / 0.35);
+}
+.pill-ghost {
+  --pill-bg: transparent;
+  --pill-fg: var(--color-ink);
+  box-shadow: inset 0 0 0 1px var(--color-line);
+}
+.pill-accent {
+  --pill-bg: var(--color-accent);
+  --pill-fg: var(--color-accent-ink);
+}
+.pill-dark {
+  --pill-bg: var(--color-accent-ink);
+  --pill-fg: var(--color-accent);
+}
+.pill-dark::before {
+  background: var(--color-ink);
+}
+.pill-accent::before {
+  background: var(--color-ink);
+}
+
+/* Chip toggles (segmented controls) */
+.chip {
+  height: 2.5rem;
+  padding: 0 1.1rem;
+  border-radius: 999px;
+  box-shadow: inset 0 0 0 1px var(--color-line);
+  color: var(--color-muted);
+  font-size: 0.95rem;
+  transition:
+    background 0.3s var(--ease-out-expo),
+    color 0.3s var(--ease-out-expo),
+    transform 0.2s var(--ease-out-expo);
+}
+.chip:hover {
+  color: var(--color-ink);
+}
+.chip:active {
+  transform: scale(0.96);
+}
+.chip[aria-pressed='true'],
+.chip[aria-selected='true'] {
+  background: var(--color-accent);
+  color: var(--color-accent-ink);
+  box-shadow: none;
+}
+
+/* Surfaces */
+.surface {
+  border-radius: var(--radius-surface);
+  background: var(--color-bg-2);
+  box-shadow: inset 0 0 0 1px var(--color-line);
+}
+
+/* Spotlight: a soft light that follows the cursor inside a surface */
+.spotlight {
+  position: relative;
+  overflow: hidden;
+}
+.spotlight::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  border-radius: inherit;
+  opacity: 0;
+  transition: opacity 0.4s;
+  background: radial-gradient(
+    420px circle at var(--mx, 50%) var(--my, 50%),
+    rgb(212 255 63 / 0.1),
+    transparent 60%
+  );
+}
+.spotlight:hover::after {
+  opacity: 1;
+}
+
+/* Film grain on a fixed, non-scrolling layer only */
+.grain {
+  position: fixed;
+  inset: -50%;
+  z-index: 70;
+  pointer-events: none;
+  opacity: 0.06;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='160'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.9' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+}
+
+/* Custom cursor: only on fine pointers */
+.cursor {
+  display: none;
+}
+@media (hover: hover) and (pointer: fine) {
+  .cursor {
+    display: block;
+  }
+  html.has-cursor,
+  html.has-cursor a,
+  html.has-cursor button {
+    cursor: none;
+  }
+}
+
+/* Asset slot: an honest, designed placeholder for original work */
+.slot {
+  background:
+    repeating-linear-gradient(
+      -45deg,
+      rgb(236 239 227 / 0.025) 0 10px,
+      transparent 10px 20px
+    ),
+    var(--color-bg-3);
+  box-shadow: inset 0 0 0 1px var(--color-line);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    transition-duration: 0.01ms !important;
+  }
+}
