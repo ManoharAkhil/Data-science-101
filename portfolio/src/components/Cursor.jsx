@@ -24,14 +24,14 @@ export default function Cursor() {
       if (next === state && lime === onLime) return
       state = next
       onLime = lime
-      const fill = lime ? '#0e100c' : '#d4ff3f'
-      label.current.style.color = lime ? '#d4ff3f' : '#0e100c'
-      dot.current.style.backgroundColor = lime ? '#0e100c' : '#d4ff3f'
+      const fill = lime ? '#161513' : '#f2a33a'
+      label.current.style.color = lime ? '#f2a33a' : '#161513'
+      dot.current.style.backgroundColor = lime ? '#161513' : '#f2a33a'
       label.current.textContent = text
       gsap.to(ring.current, {
         scale: next === 'label' ? 2.6 : next === 'link' ? 1.6 : 1,
         backgroundColor: next === 'label' ? fill : 'rgba(0,0,0,0)',
-        borderColor: next ? fill : lime ? 'rgba(14,16,12,0.45)' : 'rgba(236,239,227,0.45)',
+        borderColor: next ? fill : lime ? 'rgba(22,21,19,0.45)' : 'rgba(236,232,223,0.45)',
         duration: 0.45,
         ease: 'expo.out',
       })
@@ -43,7 +43,7 @@ export default function Cursor() {
     const move = (e) => {
       root.style.opacity = 1
       dx(e.clientX); dy(e.clientY); rx(e.clientX); ry(e.clientY)
-      const lime = !!e.target.closest?.('#contact')
+      const lime = !!e.target.closest?.('[data-lime], .bg-amber')
       const t = e.target.closest?.('[data-cursor], a, button, [role="tab"]')
       if (!t) return setState('', '', lime)
       const text = t.getAttribute('data-cursor')
@@ -71,14 +71,14 @@ export default function Cursor() {
 
   return (
     <div className="cursor pointer-events-none fixed inset-0 z-[60] opacity-0" aria-hidden="true">
-      <div ref={dot} className="absolute -left-1 -top-1 h-2 w-2 rounded-full bg-accent" />
+      <div ref={dot} className="absolute -left-1 -top-1 h-2 w-2 rounded-full bg-amber" />
       <div
         ref={ring}
         className="absolute -left-5 -top-5 flex h-10 w-10 items-center justify-center rounded-full border border-ink/45"
       >
         <span
           ref={label}
-          className="font-mono text-[5px] font-bold uppercase tracking-wider text-accent-ink opacity-0"
+          className="font-display text-[5px] font-medium text-amber-ink opacity-0"
         />
       </div>
     </div>

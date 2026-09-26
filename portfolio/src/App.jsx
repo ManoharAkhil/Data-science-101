@@ -1,32 +1,40 @@
+import { useCallback, useState } from 'react'
 import SmoothScroll from './components/SmoothScroll'
 import Cursor from './components/Cursor'
 import Nav from './components/Nav'
+import Welcome from './components/Welcome'
 import Hero from './sections/Hero'
 import Journey from './sections/Journey'
 import Identity from './sections/Identity'
-import Cases from './sections/Cases'
-import Universe from './sections/Universe'
+import MockFloor from './sections/MockFloor'
+import Voices from './sections/Voices'
+import Formats from './sections/Formats'
 import Insights from './sections/Insights'
-import Stories from './sections/Stories'
-import Capabilities from './sections/Capabilities'
-import Contact from './sections/Contact'
+import Cases from './sections/Cases'
+import Tour from './sections/Tour'
+import Contact, { Skills } from './sections/Contact'
 
 export default function App() {
+  const [started, setStarted] = useState(false)
+  const done = useCallback(() => setStarted(true), [])
   return (
     <>
       <SmoothScroll />
       <Cursor />
+      <Welcome onDone={done} />
       <div className="grain" aria-hidden="true" />
       <Nav />
       <main>
-        <Hero />
+        <Hero started={started} />
         <Journey />
         <Identity />
-        <Cases />
-        <Universe />
+        <MockFloor />
+        <Voices />
+        <Formats />
         <Insights />
-        <Stories />
-        <Capabilities />
+        <Cases />
+        <Tour />
+        <Skills />
         <Contact />
       </main>
     </>

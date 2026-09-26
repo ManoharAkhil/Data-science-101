@@ -22,7 +22,7 @@ export default function CountUp({ value, suffix = '', className = '' }) {
   return (
     <span ref={ref} className={`tabular-nums ${className}`}>
       <span>{fmt(value)}</span>
-      {suffix && <span className="text-accent">{suffix}</span>}
+      {suffix && <span className="text-amber">{suffix}</span>}
     </span>
   )
 }

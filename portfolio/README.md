@@ -1,6 +1,7 @@
 # Manohar Akhil: portfolio
 
-A scroll-driven portfolio showing what a resume can't: the executions, the insights behind them, and how the thinking works.
+The executions, insights and design thinking a resume cannot show.
+Built from the verified record (`Manohar_Resume_Portfolio_Build_Record.md`), the Levonor creatives in Drive, and the mock-floor reel.
 
 ## Run it
 
@@ -12,48 +13,68 @@ npm run build    # production build in dist/
 npm run preview  # serve the production build
 ```
 
-Stack: React 19, Vite, Tailwind CSS v4, Three.js via @react-three/fiber (the hero), GSAP with ScrollTrigger and SplitText (pinning, scrubbing, text reveals), and Lenis (smooth scroll).
+Stack: React 19, Vite, Tailwind CSS v4, Three.js via @react-three/fiber, GSAP (ScrollTrigger, SplitText), Lenis.
 
-## Page structure
+## Fonts (read this first)
 
-| # | Section | What it does | Interaction |
-|---|---|---|---|
-| 1 | Hero | "Thinking made tangible." | A WebGL form that morphs, leans toward the pointer and agitates as you scroll away |
-| 2 | Journey | Six waypoints, 2017 to now | Pinned. The year rolls like an odometer and each anchor phrase replaces the last. The final chapter changes register and hands off to the work |
-| 3 | Brand elements | One brand, four visual languages | Four panels. The active one opens to mood, type and palette, and extensions while the others stay visible for contrast |
-| 4 | Case studies | Data, insight, move, result | Sticky stack: each card pins while the next slides over it. Numbers count up |
-| 5 | Brand universe | Discover, explore, arrive, experience, stay connected | Vertical scroll becomes a sideways walk that ends at the canopy walkway, with a before/after drag slider |
-| 6 | Gathering insights | ICP, response data and A/B tests, testimonials, product teams | A listening meter that reacts to the pointer, plus a bento grid of the four sources |
-| 7 | Stories | Instagram, Meta and Google, print and OOH | Hovering a channel morphs a preview to that format's shape. The render-removal decision scrubs Gen 1 to Gen 3. The median/cantilever toggle physically reshapes the frame |
-| 8 | What I take care of | Capabilities | The page's one marquee, steered by scroll direction |
-| 9 | Contact | "Let's make something mean something." | Magnetic button and copy-to-clipboard with a confirmation burst |
+The site uses **TWK Everett** (display, Light to Bold) and **Atyp Text** (body, Light to Medium). Both are commercial fonts:
 
-Throughout: a two-part cursor with contextual labels (Open, Drag, Copy, Write), magnetic buttons whose fill floods in from the side you entered, and tactile press states.
+- TWK Everett's embedded license forbids storing the files on publicly available servers, redistributing, or modifying them.
+- Atyp Text is marked "All rights reserved".
 
-## Editing content
+This repository is public, so `public/fonts/` is **git-ignored** and the font files are never committed. To run locally, put these files in `portfolio/public/fonts/`:
 
-Every word lives in `src/content.js`. Components only render what that file provides.
+```
+TWKEverett-Light.otf  TWKEverett-Regular.otf  TWKEverett-Medium.otf  TWKEverett-Bold.otf
+AtypText-Light.ttf    AtypText-Regular.ttf    AtypText-Medium.ttf
+```
 
-- **Email:** `site.email`. It was copied from the previous site (`ch.akhilmanohar1@gmail.com`), so confirm it's the right inbox.
-- **Internal metrics:** the 95.8% referral conversion rate is hidden by default. The public line reads "the highest-converting channel in the funnel". Set `site.showInternalMetrics = true` to publish the exact figure.
+Without them the page falls back to Helvetica/Arial. **Before deploying publicly, get a web license from each foundry** (Weltkern for Everett, Suitcase Type for Atyp).
 
-## Adding your original work
+The three Atyp files all report weight 400 internally, so `index.html` assigns 300, 400 and 500 explicitly.
 
-Each visual slot shows a labelled placeholder until you give it an image. No stock imagery stands in for real work. To fill one:
+## Design system: Night Site
 
-1. Put the file in `portfolio/public/work/` (for example `public/work/egeira-mood.jpg`).
-2. In `src/content.js`, set that asset's `src` to `'./work/egeira-mood.jpg'`.
+| Token | Value | Use |
+|---|---|---|
+| Ground | `#161513` | Page background |
+| Ink | `#ECE8DF` | Primary text (14.9:1) |
+| Muted | `#A39E92` | Body copy (6.8:1) |
+| Dim | `#8A857A` | Captions (5.0:1) |
+| Amber | `#F2A33A` | The one accent (8.8:1) |
 
-Slots waiting for artwork:
+Radius: images 14px, controls full pill. No em or en dashes anywhere.
 
-- **Brand elements:** mood board, type and palette, and an extension (brochure or site) for Egeira, NorthEast, Sumangal and Payanam (12 images)
-- **Case studies:** mock floor walkthrough photo; Register 01 (offer-led) and Register 02 (lifestyle) creatives
-- **Brand universe:** one image each for campaign/website, brochure spread, signage or office space, experience centre, emailer or update; canopy walkway in progress and finished
-- **Stories:** Gen 1, Gen 2 and Gen 3 OOH creatives; one median creative and one cantilever creative
+## The unifying principle: the Levonor L, filled with people
+
+- **Hero (WebGL):** a 10 x 6 montage wall of homebuyer tiles flips and flies into the Levonor L. The chamfered corner, the brand's signature cut, is edged in amber. It leans toward the pointer and comes apart as you scroll away.
+- **200+ voices (DOM):** the same L, built from the same faces, scrubs together as you scroll.
+
+The tiles come from `public/work/l-atlas.webp`: a 1024 px image holding a 4 x 4 grid of 256 px squares. It currently uses people from the mock-floor reel. **To use the testimonial montage stills**, make a new 4 x 4 atlas at the same size and replace that file. No code change is needed.
+
+## Sections
+
+1. **Welcome:** the name steps from Light to Bold (weight as identity). Plays once per session.
+2. **Hero:** the identity line, the L, and four flip cards (151%, 72%, 200+, No. 1). The cards turn over on their own, then again on tap.
+3. **Journey:** six eras, pinned. Each anchor is set heavier than the last, Light to Bold.
+4. **Identity:** Egeira lockup, six swatches sampled from the creatives (tap to copy), and the surfaces.
+5. **Mock floor case:** data, insight, move and result on a sticky rail beside the walk, then homebuyer quotes and the campaign end card.
+6. **200+ voices:** the pipeline and the L.
+7. **Formats:** five OOH boards drawn to true relative scale in feet (toggle to readable), plus three generations of the brief.
+8. **Insights:** four listening sources; engineer fact to buyer sentence, with the ad frame that shipped.
+9. **Three more decisions:** dual-agency segmentation, organic reach, client communication.
+10. **Tour:** a horizontal walk through the touchpoints to the canopy walkway.
+11. **Skills and contact.**
+
+## Content rules
+
+- Every figure comes from the build record's verified data bank. The 95.8% internal conversion rate is not published (the page says "best-converting channel").
+- Instagram uses 6,718 (verified) so 151% holds. **The resume still says 6,702: update it to match.**
+- The Aug 2025 OOH file needs Drive sign-in, so the render-removal story shows March 2025, February 2026 and May 2026 without claiming which stage dropped renders.
 
 ## Accessibility and performance
 
-- `prefers-reduced-motion` turns off smooth scroll, pinning, scrubbing, the cursor and magnetic effects. The hero renders a single still frame and the journey becomes a plain list.
-- The custom cursor appears only on devices with a fine pointer (mouse or trackpad). Touch devices keep native behaviour.
-- The two lightest text colours measure 7.9:1 and 5.4:1 against the background (WCAG AA is 4.5:1).
-- Three.js loads as a separate chunk after the page renders. The hero mesh uses about 20k vertices on phones and about 60k on desktops.
+- `prefers-reduced-motion`: no welcome, no smooth scroll or pins. The L renders as a single finished frame and the journey becomes a list.
+- The custom cursor appears only on devices with a fine pointer (mouse or trackpad).
+- The WebGL scene is 60 instanced quads and loads lazily after first paint.
+- Creatives are WebP, about 1.9 MB in total.

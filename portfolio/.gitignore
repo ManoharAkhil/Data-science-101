@@ -1,2 +1,4 @@
 node_modules
 dist
+# Licensed fonts (Weltkern, Suitcase Type): never commit to this public repo
+public/fonts/

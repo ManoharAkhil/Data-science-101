@@ -1,17 +1,17 @@
-// Single source of truth for every word and asset on the page.
-// Edit copy here; components only render what this file provides.
-//
-// ASSETS: every `src: null` renders a labelled slot telling you exactly what
-// original artwork belongs there. Drop files into /public/work/ and set `src`.
+// Every word and image on the page lives here.
+// Sources: Manohar_Resume_Portfolio_Build_Record.md (verified data bank,
+// locked resume), the Levonor creatives in Drive, and the mock-floor reel.
+// House rule: no em or en dashes anywhere.
+
+const w = (f) => `./work/${f}`
 
 export const site = {
   name: 'Manohar Akhil',
   fullName: 'Manohar Akhil Chintalapati',
-  role: 'Brand strategist',
-  // Copied from the previous live site. Confirm this is the right inbox.
+  role: 'Brand Manager',
+  city: 'Hyderabad',
   email: 'ch.akhilmanohar1@gmail.com',
-  // Internal dashboard figures stay private unless you flip this to true.
-  showInternalMetrics: false,
+  linkedin: null, // add the profile URL to show it in the footer
 }
 
 export const nav = [
@@ -21,198 +21,136 @@ export const nav = [
 ]
 
 export const hero = {
-  eyebrow: 'Manohar Akhil, brand strategist',
-  line1: 'Thinking made',
-  line2: 'tangible.',
-  sub: 'I connect what people feel with what a brand actually does.',
+  eyebrow: 'Manohar Akhil Chintalapati. Brand Manager, Hyderabad.',
+  line1: 'I design for the',
+  line2: 'three seconds',
+  line3: 'someone actually gives you.',
+  sub: 'Seven years across market research, content and brand. Now building the whole system for a residential developer: identity, campaigns, and the spaces people walk through.',
+  lCaption: 'Every tile is a homebuyer from the mock floor launch.',
 }
 
+// Flip cards. Front: the claim. Back: the proof.
+export const proof = [
+  {
+    value: '151%',
+    label: 'Instagram growth',
+    detail: '2,677 to 6,718 followers in 21 months, organic content plus one sponsorship.',
+  },
+  {
+    value: '72%',
+    label: 'Referral lift',
+    detail: 'Referral leads rose from 8.5 to 14.6 a month in the five months after the mock floor launch.',
+  },
+  {
+    value: '200+',
+    label: 'Customer voices',
+    detail: 'Testimonials captured on camera and cut into ad creative, in English, Hindi and Telugu.',
+  },
+  {
+    value: 'No. 1',
+    label: 'Converting channel',
+    detail: 'Customer referrals became the best-converting channel in the entire funnel.',
+  },
+]
+
+// Type weight escalates with each era: Light for the first chapter,
+// Bold for the last. The weight is the story.
 export const journey = [
-  {
-    years: '2017-2020',
-    start: 2017,
-    role: 'Freelance Content Consultant',
+  { years: '2017-2020', org: 'Freelance', role: 'Content Consultant', weight: 300,
     anchor: 'Started with words.',
-    thesis:
-      'Blogs, product descriptions, social copy and web content for multiple clients. The first brand-template systems, built to keep tone consistent across platforms.',
-  },
-  {
-    years: '2019-2020',
-    start: 2019,
-    role: 'Keystone Marketing, Market Research',
+    thesis: 'Blogs, product descriptions, social and web copy for many clients, and the first brand templates to keep tone consistent.' },
+  { years: '2019-2020', org: 'Keystone Marketing', role: 'Associate, Market Research', weight: 300,
     anchor: 'Learned to read a market before writing to it.',
-    thesis:
-      'Market-share, pricing and competitive analysis. The research discipline that still underpins every brand-positioning decision since.',
-  },
-  {
-    years: '2020-2022',
-    start: 2020,
-    role: 'enWEgor, Co-Founder',
-    anchor: 'Built brands for other people, across industries that had nothing in common.',
-    thesis:
-      'Visual identity and digital footprint work across ed-tech, health, sustainable energy and IT, including scaling a client YouTube channel to 2M+ viewers.',
-  },
-  {
-    years: '2022-2023',
-    start: 2022,
-    role: 'igebra.ai, Content Specialist',
+    thesis: 'Market share, average selling price and addressable market analysis. The research habit behind every positioning call since.' },
+  { years: '2020-2022', org: 'enWEgor', role: 'Co-Founder', weight: 400,
+    anchor: 'Built brands for other people.',
+    thesis: 'Identity, websites and design systems across ed-tech, health, sustainable energy and IT, including a client YouTube channel scaled to 2M+ viewers.' },
+  { years: '2022-2023', org: 'igebra.ai', role: 'Content Specialist', weight: 400,
     anchor: 'Learned to sell a product before it was easy to sell.',
-    thesis:
-      'Go-to-market content strategy for a B2B ed-tech launch, built on customer personas derived from real market-trend data.',
-  },
-  {
-    years: '2023-2024',
-    start: 2023,
-    role: 'Vasavi Group, Digital Content Strategist',
+    thesis: 'Go-to-market content for a B2B ed-tech launch, built on personas drawn from market-trend data.' },
+  { years: '2023-2024', org: 'Vasavi Group', role: 'Digital Content Strategist', weight: 500,
     anchor: 'First time owning a team, not just a task.',
-    thesis:
-      'Led a seven-member content team across two residential projects. The work that earned Forbes India and national press coverage, and the bridge into real estate.',
-  },
-  {
-    years: '2024-Present',
-    start: 2024,
-    role: 'Levonor',
+    thesis: 'A seven-member content team across two residential projects, and press coverage that reached Forbes India.' },
+  { years: '2024-now', org: 'Levonor Lifespaces', role: 'Brand Manager', weight: 700,
     anchor: 'Started building the whole system.',
-    thesis: null, // the finale changes register and flows into the work
-  },
+    thesis: null },
 ]
 
 export const identity = {
-  title: 'One brand.',
-  titleEm: 'Four visual languages.',
-  thesis:
-    'A 744-unit gated community, a 45-home boutique project and a 40-acre villa community cannot share one visual voice without one of them feeling wrong.',
-  decisions: [
-    { k: 'Mood and references', q: 'What should the audience recognise or feel?' },
-    { k: 'Typography and colour', q: 'What visual register fits the positioning?' },
-    { k: 'Extensions', q: 'How does the expression hold across formats?' },
+  title: 'One identity,',
+  titleEm: 'many surfaces.',
+  line: 'Egeira, the flagship. The same brand has to hold on a 40 ft unipole, a canopy panel, an ad end card and a floor number sign.',
+  logo: { dark: w('egeira-logo-white.png'), light: w('egeira-logo-black.png') },
+  swatches: [
+    { hex: '#00A493', name: 'Egeira teal', from: 'The notch in the logo' },
+    { hex: '#EE7140', name: 'Sunrise', from: 'OOH, May 2026' },
+    { hex: '#5DBE94', name: 'Mint', from: 'OOH, March 2025' },
+    { hex: '#49B0A0', name: 'Sea green', from: 'Canopy walkway' },
+    { hex: '#1A9173', name: 'Show floor', from: 'Ad end card' },
+    { hex: '#4A5A6D', name: 'Dusk', from: 'OOH, February 2026' },
   ],
-  projects: [
-    {
-      name: 'Egeira',
-      assets: [
-        { label: 'Egeira mood board', src: null },
-        { label: 'Egeira type and palette', src: null },
-        { label: 'Egeira brochure or site extension', src: null },
-      ],
-    },
-    {
-      name: 'NorthEast',
-      assets: [
-        { label: 'NorthEast mood board', src: null },
-        { label: 'NorthEast type and palette', src: null },
-        { label: 'NorthEast brochure or site extension', src: null },
-      ],
-    },
-    {
-      name: 'Sumangal',
-      assets: [
-        { label: 'Sumangal mood board', src: null },
-        { label: 'Sumangal type and palette', src: null },
-        { label: 'Sumangal brochure or site extension', src: null },
-      ],
-    },
-    {
-      name: 'Payanam',
-      assets: [
-        { label: 'Payanam mood board', src: null },
-        { label: 'Payanam type and palette', src: null },
-        { label: 'Payanam brochure or site extension', src: null },
-      ],
-    },
+  surfaces: [
+    { src: w('ooh-unipole-top.webp'), label: 'Unipole, 40 x 40 ft', ratio: '1 / 1' },
+    { src: w('canopy-print.webp'), label: 'Canopy panels, print spec', ratio: '16 / 9' },
+    { src: w('canopy-graphics.webp'), label: 'Canopy graphics, print and plot', ratio: '16 / 9' },
+    { src: w('ad-ad-show-floor.webp'), label: 'Ad end card', ratio: '16 / 9' },
   ],
+  others: 'The same method shaped NorthEast, Sumangal and Payanam: one visual voice per project, set by its scale and its buyer.',
 }
 
-// Each case reads left to right: data -> insight -> move -> result.
-export const cases = [
-  {
-    id: 'trust',
-    kicker: 'Experience design',
-    title: 'Trust you can walk through.',
-    data: 'A new developer with no track record, and buyers who had already paid but would not see their home for a year.',
-    insight:
-      'Industry-standard mock units do not solve for trust. Buyers who have paid need to feel it, not be told it.',
-    move: 'The Mock Floor Launch: a fully finished, ready-to-move-in floor across every unit typology, a year ahead of handover, exclusively for existing homebuyers. Paired with a dual-sided referral incentive that only works if the experience genuinely lands.',
-    sequence: [
-      'Sensory design across every arrival point',
-      'A kids’ art activation that became the dedicated art wall in the tagline',
-      'A referral mechanic that rewards both sides',
-    ],
-    stats: [
-      { value: 900, suffix: '+', label: 'attendees across two days' },
-      { value: 150, suffix: '+', label: 'testimonials' },
-    ],
-    resultPublic:
-      'Referrals grew for five months after, and became the highest-converting channel in the funnel.',
-    resultInternal:
-      'Referrals grew for five months after, converting at 95.8%, the best-performing channel in the funnel.',
-    assets: [{ label: 'Mock floor walkthrough photograph', src: null }],
-  },
-  {
-    id: 'voices',
-    kicker: 'Campaign strategy',
-    title: 'One strategy. Two voices.',
-    data: 'Two agency partners running creative on the same platforms, for the same audience pool.',
-    insight: 'Same creative, same audience, two budgets: a real cannibalisation risk and wasted spend.',
-    move: 'A six-axis segmentation strategy that split creative direction between the two on purpose.',
-    axes: [
-      'Offer-led / Lifestyle-led',
-      'Testimonial / Render video',
-      'Per sq.ft. / All-inclusive price',
-    ],
-    stats: [{ value: 6, suffix: '', label: 'axes of deliberate difference' }],
-    resultPublic:
-      'Measurably different conversion quality between the two approaches, reconciled against business objectives rather than vanity metrics.',
-    assets: [
-      { label: 'Register 01: offer-led creative', src: null },
-      { label: 'Register 02: lifestyle creative', src: null },
-    ],
-  },
-  {
-    id: 'pipeline',
-    kicker: 'Creative operations',
-    title: 'From conversations to creative.',
-    data: 'Manual testimonial collection and editing could not keep pace with ongoing ad demand.',
-    insight: 'The bottleneck was the process, not the stories. Customers were already saying it.',
-    move: 'A four-phase AI-assisted pipeline in English, Hindi and Telugu.',
-    steps: ['Transcribe', 'Classify', 'Cut', 'Deliver'],
-    stats: [{ value: 200, suffix: '+', label: 'testimonials deployed into ad creative' }],
-    resultPublic: 'A manual bottleneck turned into a repeatable system.',
-    assets: [],
-  },
-  {
-    id: 'recall',
-    kicker: 'Organic brand building',
-    title: 'Recall on zero media spend.',
-    data: 'A new developer brand has no organic recall to draw on.',
-    insight: 'Consistency compounds. Presence in culture earns attention that ads rent.',
-    move: 'Consistent organic ownership on Instagram, plus a co-branding partnership with Warangal Warriors as TG20 platinum sponsor.',
-    stats: [
-      { value: 2677, suffix: '', label: 'followers, before' },
-      { value: 6702, suffix: '', label: 'followers, after' },
-    ],
-    resultPublic:
-      'Separately, recall-driven channels (OOH and organic) generated real leads at near-zero acquisition cost.',
-    assets: [],
-  },
-]
-
-export const universe = {
-  title: 'A brand is also what you',
-  titleEm: 'walk through.',
-  stops: [
-    { k: 'Discover', items: 'Websites, social media, campaigns', line: 'An expectation begins.', asset: 'Campaign or website', src: null },
-    { k: 'Explore', items: 'Brochures, sales collateral, stationery', line: 'The promise gains detail.', asset: 'Brochure spread', src: null },
-    { k: 'Arrive', items: 'Signage, wayfinding, office spaces', line: 'The brand becomes physical.', asset: 'Signage or office space', src: null },
-    { k: 'Experience', items: 'Experience centres, mock floor, events', line: 'People judge it for themselves.', asset: 'Experience centre', src: null },
-    { k: 'Stay connected', items: 'Progress updates, emailers, WhatsApp flows', line: 'Consistency continues after the visit.', asset: 'Emailer or update', src: null },
+export const mockFloor = {
+  kicker: 'Case study',
+  title: 'Home is only',
+  titleEm: 'months away.',
+  date: 'Mock floor launch, 6 and 7 December 2025',
+  steps: [
+    { k: 'The data', body: 'A new developer with no track record. Buyers who had already paid, and would not see their home for a year.' },
+    { k: 'The insight', body: 'Trust cannot be told. It has to be walked through. So the launch line became: why make do with a teaser, when you can get the full picture?' },
+    { k: 'The move', body: 'A fully finished floor across every unit type, a year before handover, opened only to existing homebuyers. Sensory branding, a kids art activation, wayfinding, a canopy walkway, an 85 m site wrap, and a two-sided referral reward.' },
+    { k: 'The result', body: '900+ people across two days. 150+ testimonials on the day. Referral leads up about 72% over the next five months.' },
   ],
-  walkway: {
-    title: 'The canopy walkway.',
-    line: 'A documentation-heavy plan, translated into a space people walk through.',
-    before: { label: 'Canopy walkway, in progress', src: null },
-    after: { label: 'Canopy walkway, finished', src: null },
-  },
+  walk: [
+    { src: w('reel-lobby.webp'), k: 'Arrive', line: 'The lobby, dressed for the day.' },
+    { src: w('reel-preview-easel.webp'), k: 'The preview', line: 'Invitation art at the door.' },
+    { src: w('reel-wayfinding.webp'), k: 'Find your way', line: 'Unit signage, live before handover.' },
+    { src: w('reel-art-wall.webp'), k: 'The art wall', line: 'The feature buyers talked about most.' },
+    { src: w('reel-kids-art.webp'), k: 'Every moment matters', line: 'Kids painted while parents toured.' },
+    { src: w('reel-corridor-generations.webp'), k: 'Private corridors', line: 'Built for every generation.' },
+  ],
+  voices: [
+    { src: w('reel-quote-art-wall.webp'), quote: 'Art wall is something that is very unique.' },
+    { src: w('reel-quote-not-seen.webp'), quote: 'I haven’t seen in any of the projects.' },
+    { src: w('reel-quote-home-makers.webp'), quote: 'Levonor team is actually home makers.' },
+  ],
+  cta: { src: w('ad-ad-show-floor.webp'), label: 'The campaign that followed: experience the show floor.' },
+}
+
+export const voices = {
+  title: '200+ voices.',
+  titleEm: 'One letter.',
+  line: 'Every testimonial went through the same four steps, then back out as ads. The Levonor L, filled with the people who said it.',
+  steps: ['Transcribe', 'Classify', 'Cut', 'Deliver'],
+  langs: 'English, Hindi, Telugu',
+  consent: 'A written consent framework for commercial use came first.',
+}
+
+export const formats = {
+  title: 'Five formats. One campaign.',
+  titleEm: 'Zero renders.',
+  line: 'A driver passing a cantilever gets between 1.5 and 3 seconds. Someone waiting at a median gets more. The message is sized to the moment, not the other way round.',
+  // widths and heights in feet, so the lineup can be drawn to true scale
+  boards: [
+    { src: w('ooh-cantilever.webp'), name: 'Cantilever', ft: [40, 15], read: 'Far range, fast pass' },
+    { src: w('ooh-unipole-top.webp'), name: 'Top unipole', ft: [40, 40], read: 'Seen from the flyover' },
+    { src: w('ooh-unipole-bottom.webp'), name: 'Bottom unipole', ft: [30, 20], read: 'A different ask: skip the wait' },
+    { src: w('ooh-median-4x5.webp'), name: 'Median', ft: [4, 5], read: 'Close range, slow dwell' },
+    { src: w('ooh-median-3x5.webp'), name: 'Median', ft: [3, 5], read: 'Close range, slow dwell' },
+  ],
+  evolution: [
+    { src: w('gen-2025-03.webp'), when: 'March 2025', what: 'A question, one line of proof.' },
+    { src: w('gen-2026-02.webp'), when: 'February 2026', what: 'Show flat, show floor. Dark, direct.' },
+    { src: w('gen-2026-05.webp'), when: 'May 2026', what: 'One promise, sized for every board.' },
+  ],
 }
 
 export const insights = {
@@ -220,95 +158,58 @@ export const insights = {
   titleEm: 'the listening.',
   line: 'The useful question is the one that changes the brief.',
   sources: [
-    {
-      k: 'Understand the person',
-      q: 'Who is this for, and what matters to them?',
-      a: 'Customer personas and the ideal client profile, built from market research, customer conversations and the context of the purchase.',
-    },
-    {
-      k: 'Read the response',
-      q: 'Which response actually matters to the business?',
-      a: 'Lead and conversion quality read alongside campaign performance. Contrasting creative and A/B tests question the brief, not just rank the ads.',
-    },
-    {
-      k: 'Listen to lived experience',
-      q: 'What do customers say without being prompted?',
-      a: 'Testimonials reveal the language people use about the product and the company, classified into stories that keep the customer’s perspective.',
-    },
-    {
-      k: 'Understand the product decision',
-      q: 'Why was it designed that way?',
-      a: 'Conversations with engineers and product development reveal the effort behind a feature, and connect a design decision to the way someone lives.',
-    },
+    { k: 'The person', q: 'Who is this for, and what matters to them?' },
+    { k: 'The response', q: 'Which leads were worth having? Contrasting creative and A/B tests question the brief, not just rank the ads.' },
+    { k: 'The customer', q: 'What do people say without being prompted?' },
+    { k: 'The engineer', q: 'Why was it built that way?' },
+  ],
+  pairs: [
+    { fact: 'Higher ceilings, by design.', story: 'Experience the luxury of high ceilings.', src: w('ad-ad-high-ceilings.webp') },
+    { fact: 'No two front doors face each other.', story: 'See up close how we’ve brought privacy to shared spaces.', src: w('ad-ad-privacy.webp') },
+    { fact: 'An art wall, designed into the corridor.', story: '“Art wall is something that is very unique.” A homebuyer, unprompted.', src: w('reel-art-wall.webp') },
   ],
 }
 
-export const stories = {
-  title: 'Same insight.',
-  titleEm: 'A different way in.',
-  channels: [
-    {
-      k: 'Instagram',
-      head: 'Make it relatable.',
-      body: 'A product decision translated into a human story, carried through script, visual cues and the final reel.',
-    },
-    {
-      k: 'Meta and Google',
-      head: 'Give a reason to act.',
-      body: 'Creative adapted for intent: offer-led or lifestyle-led, testimony or product imagery, with performance informing the next round.',
-    },
-    {
-      k: 'Print and OOH',
-      head: 'Respect the glance.',
-      body: 'Quarterly campaign direction shaped by readability, placement and competitive visual scanning.',
-    },
-  ],
-  render: {
-    title: 'The render-removal decision.',
-    insight:
-      'Sophisticated visuals were losing to a 1.5 to 3 second attention window.',
-    move: 'A quarterly brief system built from readability research and competitive scanning, ending in one instruction: remove every photographic render.',
-    gens: [
-      { k: 'Gen 1', label: 'Gen 1 OOH creative', src: null },
-      { k: 'Gen 2', label: 'Gen 2 OOH creative', src: null },
-      { k: 'Gen 3', label: 'Gen 3 OOH creative', src: null },
-    ],
-  },
-  format: {
-    title: 'Format is a message constraint,',
-    titleEm: 'not a canvas.',
-    modes: [
-      {
-        k: 'Median',
-        spec: 'Portrait. Close range. Slow dwell.',
-        usp: 'Functional reasons to care',
-        tags: ['Parking', 'Kids', 'Work from home'],
-        label: 'Median creative',
-        src: null,
-      },
-      {
-        k: 'Cantilever',
-        spec: 'Landscape. Far range. Fast pass.',
-        usp: 'Aspirational reasons to want',
-        tags: ['Light', 'Views', 'Breeze'],
-        label: 'Cantilever creative',
-        src: null,
-      },
-    ],
-  },
-}
-
-export const capabilities = [
+export const cases = [
   {
-    group: 'Strategy',
-    items: ['Brand positioning', 'ICP and personas', 'Market and competitive research', 'Creative segmentation'],
+    k: 'Two voices',
+    title: 'One project, two agencies, opposite creative on purpose.',
+    body: 'Offer-led against lifestyle-led, testimonial against render video, per sq.ft. against all-inclusive pricing, and three more axes. Split on purpose, so the two agencies were never chasing the same buyer with the same ad.',
+    tag: 'Six-axis segmentation',
   },
   {
-    group: 'Expression',
-    items: ['Visual identity direction', 'Typography and colour systems', 'Brochures and collateral', 'OOH and print'],
+    k: 'Organic reach',
+    title: '10.5M views in nine months.',
+    body: '5.1M accounts reached and 3,440 net new followers. About three quarters of that growth landed in June 2026, when the Warangal Warriors sponsorship met a paid push.',
+    tag: 'Instagram',
   },
   {
-    group: 'Experience and systems',
-    items: ['Launch and event experience', 'Physical brand and wayfinding', 'Content systems', 'Performance creative for Meta and Google'],
+    k: 'Staying in touch',
+    title: 'The year between booking and handover.',
+    body: 'Progress-update and demand-draft emailers, survey forms and WhatsApp flows, now standing assets the company sends without asking.',
+    tag: 'Client communication',
   },
 ]
+
+export const tour = {
+  title: 'A brand is also what you',
+  titleEm: 'walk through.',
+  stops: [
+    { k: 'Discover', src: w('egeira-towers.webp'), line: 'The first impression is a skyline.' },
+    { k: 'Explore', src: w('canopy-messaging.webp'), line: 'The canopy says the specifics: 7 homes per floor, 75,000+ sq. ft. of amenities.' },
+    { k: 'Arrive', src: w('reel-lobby.webp'), line: 'The lobby becomes the brand.' },
+    { k: 'Find your way', src: w('reel-wayfinding.webp'), line: 'A 225-step customer journey, briefed sign by sign.' },
+    { k: 'Experience', src: w('reel-art-wall.webp'), line: 'People judge it for themselves.' },
+    { k: 'Stay', src: w('ad-ad-show-floor.webp'), line: 'The invitation keeps going after the visit.' },
+  ],
+  walkway: { src: w('canopy-full-view.webp'), label: 'Canopy walkway, full run, as briefed to the fabricator.' },
+}
+
+export const skills = [
+  { group: 'Brand and strategy', items: ['Brand visual identity', 'Positioning', 'Creative direction', 'Customer experience design'] },
+  { group: 'Management', items: ['Cross-functional leadership', 'Agency management', 'Vendor management', 'Stakeholder alignment'] },
+  { group: 'Operations', items: ['Content production pipelines', 'Campaign segmentation', 'Event design', 'Referral programmes'] },
+  { group: 'Analytics and tools', items: ['Campaign performance', 'Primary and secondary research', 'AI-assisted creative workflows', 'CRM coordination'] },
+]
+
+export const atlas = w('l-atlas.webp') // 4 x 4 grid of people; replace with the montage stills
