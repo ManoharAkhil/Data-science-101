@@ -128,7 +128,7 @@ Each item links to on-page proof; any item without proof is cut. "Brand architec
 
 **S10 Contact.**
 - "Hiring for brand or marketing? Write to me."
-- Email ch.akhilmanohar1@gmail.com, shown as selectable text with a copy button.
+- Email ch.akhilmanohar1@gmail.com *(address to confirm)*, shown as selectable text with a copy button.
 - LinkedIn *(URL pending)*.
 - Resume downloads: ATS .docx and designed PDF *(files pending)*.
 - "Open to brand and marketing leadership roles."
@@ -138,7 +138,7 @@ Each item links to on-page proof; any item without proof is cut. "Brand architec
 
 | Beat | Image |
 |---|---|
-| Arrival | `canopy-full-view` |
+| Arrival | `reel-preview-easel` |
 | Threshold | `reel-lobby` |
 | Corridor | `reel-wayfinding` |
 | Home | `reel-art-wall` |
@@ -170,10 +170,10 @@ Each item links to on-page proof; any item without proof is cut. "Brand architec
 | `ad-ad-teaser`, `ad-ad-full-picture` | Not two registers; same ad |
 | `gen-2025-03`, `gen-2026-02`, `gen-2026-05` | Not denser than the final boards, so they cannot serve as "before" |
 | `ooh-unipole-bottom` | Carries a different message; breaks "one message, three formats" |
-| `ooh-median-3x5` | Same format as 4x5; redundant |
+| `ooh-median-3x5` | A second median size with the same message; redundant |
 | `egeira-towers`, `egeira-courtyard` | Renders; no claim needs them; contradict the subtraction story |
-| `reel-kids-table`, `reel-corridor-generations`, `reel-preview-easel` | Each duplicates a stronger beat image |
-| `canopy-graphics`, `canopy-print` | Production specs; clarify nothing a viewer needs |
+| `reel-kids-table`, `reel-corridor-generations` | Each duplicates a stronger beat image |
+| `canopy-full-view`, `canopy-graphics`, `canopy-print` | Production specs; illegible at page size, and clarify nothing a viewer needs. The canopy's words reach S6 through `canopy-messaging` |
 | `ad-ad-privacy` | S7 is limited to one image |
 | `egeira-logo-black/white` | Held for S5 constants only if S5 gets real assets |
 
@@ -191,37 +191,37 @@ Each item links to on-page proof; any item without proof is cut. "Brand architec
 Desktop, 1440 wide. 12-column grid, 1280 maximum, margins `clamp(20px, 5vw, 72px)`.
 ```
 S1  ┌────────────────────────────────────────────────────────┐
-    │ ma.                                 Work Contact Resume │ 72px, hides on scroll down
+    │ ma.                                Work Contact Resume │ 72px, hides on scroll down
     │                                                        │
     │   People believe what                        ░▒▓       │ artefact: <=25% vw, off-axis,
     │   they can walk into.                        ▓▒░       │ still (DEFAULT)
     │                                                        │
     │   Step into the work →                                 │ 100dvh (only section allowed)
     └────────────────────────────────────────────────────────┘
-S2  │ A finished floor, a year                ░ ░ ● ░       │ artefact sticky, now reacting
-    │ before handover.                        ░ ● ░ ░       │
-    │ 900+ visitors across two days.                          │
-    │ 150+ testimonials on the launch weekend.  Step inside →│
+S2  │ A finished floor, a year                 ░ ░ ● ░       │ artefact sticky, now reacting
+    │ before handover.                         ░ ● ░ ░       │
+    │ 900+ visitors across two days.                         │
+    │ 150+ testimonials on the launch weekend. Step inside → │
     │                         "Art wall is something..."     │ Signal 2 offset right, lower
     │                         "I haven't seen in any..."     │ voices accumulate (pin <=150%)
     │                     more than 200 homebuyers, EN HI TE │
-    │  capture ─ transcribe ─ classify ─ cut ─ clear ─ deploy│
+    │ capture ─ transcribe ─ classify ─ cut ─ clear ─ deploy │
 S3  │ 2017 Started with words.                   (light)     │ pinned desktop; each stage adds
     │   2019 Learned to read a market... + scope line        │ one layer; weight climbs
     │     2020 Built brands... + column + 2M+ mark           │
-    │        ... Levonor: Started building the whole system. │ opens into S4
-S4  │ ───────────────────────────────────────────────────────│
-    │ A finished floor, a year before handover.   [preview]  │ preview follows pointer
-    │ ───────────────────────────────────────────────────────│
+    │       ... Levonor: Started building the whole system.  │ opens into S4
+S4  │ ────────────────────────────────────────────────────── │
+    │ A finished floor, a year before handover.    [preview] │ preview follows pointer
+    │ ────────────────────────────────────────────────────── │
     │ Built for a glance, not a read.                        │
-    │ ───────────────────────────────────────────────────────│
+    │ ────────────────────────────────────────────────────── │
     │ Two registers, one buyer.                              │
-S5  │ One company, expressed differently...  [type|img|msg|exec]
-    │  Egeira                 │ Project 2                    │ axis switch swaps both columns
+S5  │ One company, expressed...          [type|img|msg|exec] │ axis switch swaps both columns
+    │  Egeira                   │  Project 2                 │
 S6  │            ┌ OOH ─ end card                            │ lines draw on scroll
     │  finished ─┼ canopy                                    │ node focus: one small image
     │  floor     └ wayfinding ─ (pending nodes hidden)       │
-S7  │ A buyer who has already paid...      [flip]            │ observation ⇄ decision
+S7  │ A buyer who has already paid...      [flip]            │ observation <-> decision
 S8  │   An art wall, designed into the corridor.             │ display moment #2, pinned
     │   → "Art wall is something that is very unique."       │ <=120%, stages compress
     │   → Every moment matters.          [reel-kids-art]     │
@@ -229,6 +229,7 @@ S9  │ Finding the signal   Building the system   ...         │ text links to
 S10 │ Hiring for brand or marketing? Write to me.            │
     │ ch.akhilmanohar1@gmail.com [copy]   LinkedIn   Resumes │
     │ Manohar Akhil Chintalapati                             │
+    └────────────────────────────────────────────────────────┘
 ```
 Mobile, 390 wide.
 ```
@@ -308,6 +309,7 @@ One draw call, precomputed position buffers, a `uProgress` shader tweened by GSA
 | VOICES | The layers break into points; each revealed voice lights one point in accent; the field spreads, then clusters | Signal 2 engaged | Individuals becoming a system | "Each voice lights a point; the points form a field." |
 
 - **Size and position:** 25% of the viewport at most, off-axis. Sticky through S1 and S2, then it parks (stops rendering).
+- **Leaving a signal (proposed; the brief does not say):** EXPERIENCE returns to DEFAULT when Signal 1 loses hover or focus; on touch it holds until the next tap. Signal 2 moves the artefact to VOICES from either state.
 - **Motion limits:** no idle rotation. Pointer parallax of 3° or less on fine pointers only. Morphs take 900-1200ms, are interruptible, and retarget from current positions.
 - **Not allowed:** letterforms, logos, or an encoded count.
 - **Loading:** an SVG poster of DEFAULT first; Three.js imported after LCP.
@@ -389,7 +391,7 @@ The collections follow v3 §3.9: Projects, Case Studies, Experience, Insights, V
 | LCP (mid Android, 4G) | < 2.5s; the LCP element is S1 type, not an image |
 | INP | < 200ms |
 | CLS | < 0.1; space reserved for every image and for the artefact poster |
-| Initial JS | < 120KB gzipped; Three.js (~150KB gzipped) loads after LCP |
+| Initial JS | < 120KB gzipped; Three.js (133KB gzipped, measured on a minified build of only the classes the artefact uses) loads after LCP |
 | Initial transfer | ≤ 1.2MB |
 | Home page total | ≤ 4MB excluding video |
 | Images | AVIF with WebP fallback, `srcset`, ≤ 2400px long edge |
@@ -461,4 +463,5 @@ The collections follow v3 §3.9: Projects, Case Studies, Experience, Insights, V
 - Egeira identity decisions, plus a second project's cleared assets.
 - S6 node roles, plus assets for the pending branches.
 - Confirmation of 95.8%, "remove the render", and "every home".
+- Confirmation of the contact email address.
 - A monogram, if one exists.
