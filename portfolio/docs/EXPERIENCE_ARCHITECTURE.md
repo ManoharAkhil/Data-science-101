@@ -1,190 +1,117 @@
-# Experience Architecture v1 (for owner approval)
+# Experience Architecture v2 (for owner approval)
 
-Governing documents: the owner's Portfolio Build Brief v3 (North Star) and the re-architecture prompt of 27 Sep 2026. Where the two differ, v3 wins and the difference is listed in §19.
-Status: **Phases 1-5 complete. Stopped at the approval gate. Nothing below has been built.**
+Governing documents: the owner's Portfolio Build Brief v3 (North Star), the re-architecture prompt of 27 Sep 2026, and the owner's revision of 27 Sep 2026. Where they differ, the owner's latest words win, then the brief. Every difference is listed in §19.
+Status: **v1 approved except for the changes below. Stopped at the approval gate. Nothing is built.**
 
----
+## What changed from v1
+
+The owner's revision, verbatim in substance:
+1. **One visual only:** the 200+ testimonials montage screen. While the visitor scrolls through everything Levonor, it morphs into the Levonor L.
+2. **No other provided asset is used.** No creatives, reels, OOH boards, canopy files, renders or logos, on the home page or the case pages.
+3. **Contact:** ch.akhilmanohar1@gmail.com and +91 82201 51797.
+4. Everything else in v1 stands.
+
+What that forces in the architecture:
+- **Sequence:** career progression moves before the proof, so the Levonor material becomes one continuous chapter (S3 to S8) for the morph to run through.
+- **The abstract 3D artefact is retired.** Two visual objects would compete; the montage now carries its idea (individual voices becoming one system) literally.
+- **Every other surface is typographic** or drawn in code (lines, labels, layout blocks). Case pages have no images.
 
 ## 1. Central idea
 
-**Noticed, then made tangible.**
+**Noticed, then made tangible.** Unchanged. The one visual is its clearest proof: 200+ conversations, noticed one at a time, made into the brand's own letter.
 
-The owner's work repeats one habit: he notices how people actually meet a brand (a driver's glance, a paid-up buyer's doubt, a remark nobody prompted), then turns that into something people can see in seconds, walk into, or repeat to a friend.
+## 2. Narrative sequence
 
-How the site carries it:
-- Every section opens on an observation and resolves into an artefact.
-- The 3D object stays ambiguous until someone engages with it.
-- Page transitions move like walking between rooms: continuous, never a flash.
+| # | Section | Beat | Visual layer | The visitor leaves with |
+|---|---|---|---|---|
+| S1 | Opening: "People believe what they can walk into." / Step into the work | Quiet | None, type only | A way of thinking |
+| S2 | Progression: six stages, each carrying more than the last. The Levonor stage opens the chapter | Quiet, building | None | Responsibility that kept expanding |
+| S3 | Proof: a finished floor, then more than 200 homebuyers on camera | Evidence, then immersion | **Montage screen, full width** | People showed up, and spoke |
+| S4 | Selected work: three rows | Immersion | Montage docks beside the text; tiles loosen | Entry points into the cases |
+| S5 | Visual identity: one company, expressed per project | Analysis | Tiles stream into the stem of the L | Systems, not one-offs |
+| S6 | Brand universe: one idea, many moments | Visual release | The foot of the L forms | Reach across moments |
+| S7 | Thinking: five observations, each flipping into a decision | Analysis | L nearly whole, still | How he observes |
+| S8 | Insight to story: one detail distilled into a line | Resolution | **The chamfer cuts; the L completes** | Many voices, one brand |
+| S9 | Capabilities, each linked to proof | Summary | L parks small, then scrolls away | Scope |
+| S10 | Contact | Conclusion | None | One clear exit |
 
-Kept as written in v3. Phase 2 found no sharper version.
+The Levonor chapter runs from the last stage of S2 to the end of S8. The visual exists only inside it.
 
-## 2. Narrative sequence (plain text, understandable unstyled)
+## 3. Attention map
 
-| # | Section | Beat | The visitor leaves with |
-|---|---|---|---|
-| S1 | Opening: "People believe what they can walk into." / Step into the work | Quiet | A way of thinking |
-| S2 | Two signals: a finished floor a year before handover; more than 200 homebuyers on camera | Evidence, then interaction | Proof that people showed up, and a voice system at scale |
-| S3 | Six stages, each carrying more than the last | Quiet, building | Responsibility that kept expanding |
-| S4 | Three problems, three interventions (editorial rows) | Immersion | Entry points into the cases |
-| S5 | One company, expressed differently for every project it builds | Analysis | Systems, not one-offs |
-| S6 | One idea branching into its touchpoints | Visual release | Reach across moments |
-| S7 | Five observations, each flipping into a decision | Analysis | How he observes |
-| S8 | One detail distilled into a line | Quiet | How observation becomes communication |
-| S9 | What he can carry, each capability linked to proof | Summary | Scope |
-| S10 | Hiring for brand or marketing? Write to me. | Conclusion | One clear exit |
-
-**Subtraction check.**
-- S5 and S6 stay separate. S5 answers "does the brand flex coherently?" (depth, two projects). S6 answers "how far does one idea travel?" (breadth, one idea). Merging them would lose the comparison.
-- S7 and S8 stay separate. S7 shows a repeated pattern across five decisions. S8 follows one idea through five stages. A pattern and a close-up are different proofs.
-- One primary attention objective per viewport (§3).
-
-## 3. Attention map (desktop viewport by viewport)
+Rule for the chapter: **the visual moves in the gaps and holds still while you read.** Morph steps happen at section boundaries; inside a section the tiles are at rest.
 
 | Viewport | Primary attention | Secondary evidence | Interaction | Continuation cue |
 |---|---|---|---|---|
-| S1 | The proposition | The artefact, small and still | CTA (magnetic) | CTA itself; no scroll cue |
-| S2 a | Signal 1 line | 900+ / 150+ evidence line | Hover/focus/tap morphs the artefact to EXPERIENCE; "Step inside" | Signal 2 enters beside it |
-| S2 b | One voice, then more | Fragments in HI/TE with English beneath | Each voice lights one point (VOICES) | The pipeline strip resolves |
-| S3 | The current stage's anchor line | Its scope line / proof mark | Pinned progression (desktop) | Levonor stage opens into S4 |
-| S4 | Row title | Context + one evidence line | Pointer preview; activation = Taxi transition | Next row |
-| S5 | The axis being compared | One line of reasoning per difference | Axis switch swaps both columns | Parent constants shown once |
-| S6 | The seed idea | Branch labels with role | Connections draw on scroll; node focus opens one image | Branch count settles |
-| S7 | One observation | Its decision on flip | Flip toggle | Next pair |
-| S8 | The current stage of the idea | The previous stage, compressed | Pinned compress (<=120%) | Execution image lands |
-| S9 | Group name | Capabilities, each a proof link | Links jump to proof | Contact |
-| S10 | The line | Email, LinkedIn, two resumes | Magnetic email, copy button | Footer |
+| S1 | The proposition | Nothing | The button (magnetic) | The button itself |
+| S2 | The current stage's anchor line | Its scope line or proof mark | Pinned progression (desktop) | "Started building the whole system." hands off to S3 |
+| S3 a | "A finished floor, a year before handover." | 900+ visitors in two days; 150+ testimonials on the launch weekend | Step inside (Case A) | The montage fades up behind the last line |
+| S3 b | The montage screen | Quotes as live text, one at a time; then the 200+ line | Scroll steps the quotes; tiles under a quote brighten | Pipeline line; the screen starts to shrink |
+| S4 | Row title | Context and one evidence line | Activating a row opens the case | Docked montage loosens |
+| S5 | The axis being compared | One reason per difference | Axis switch swaps both columns | Tiles gather into a vertical stroke |
+| S6 | The seed idea | Branch labels with role | Branches draw on scroll; node focus reveals its line | The foot forms |
+| S7 | One observation | Its decision, on flip | Flip toggle | Next pair |
+| S8 | The current stage of the idea | The previous stage, compressed | Pinned compress | The L completes with "Every moment matters." |
+| S9 | Group name | Capabilities as proof links | Links jump to proof | Contact |
+| S10 | The line | Email, phone, LinkedIn, two resumes | Copy buttons | Footer |
 
-## 4. Section purposes and assigned content
+## 4. Content per section
 
-Every figure and claim comes from the fact sheet (v3 §2.5), word for word.
+Every figure and claim comes word for word from the fact sheet.
 
-**S1 Opening.**
-- Proposition A: "People believe what they can walk into."
-- CTA "Step into the work", with no subtext.
-- The artefact in its DEFAULT state.
-- No name, title, bio, eyebrow or second CTA.
+**S1 Opening.** Proposition A, one button "Step into the work", no name, title, bio or second button. No visual.
 
-**S2 Proof.** An asymmetric pair, not cards.
-- Signal 1: "A finished floor, a year before handover." / "900+ visitors across two days. 150+ testimonials on the launch weekend." / Step inside.
-- Signal 2, a sequenced reveal:
+**S2 Progression.** The six stages from the brief (Vasavi included; Keystone in resume wording). The Levonor stage ends with "Started building the whole system." and its proof line "Instagram: 2,677 to 6,718 followers in 21 months." with the June 2026 sponsorship as expandable detail. That last anchor is the chapter's door.
+
+**S3 Proof.**
+- S3 a, text only: "A finished floor, a year before handover." / "900+ visitors across two days. 150+ testimonials on the launch weekend." / Step inside.
+- S3 b, the montage screen, with live text in this order:
   1. "Art wall is something that is very unique."
   2. "I haven't seen in any of the projects."
   3. "Levonor team is actually home makers."
-  4. More fragments, if `voices.csv` supplies them.
-  5. The conclusion: "One conversation at a time: more than 200 homebuyers on camera, in English, Hindi and Telugu."
-  6. The pipeline: capture, transcribe, classify, cut, clear, deploy as ads.
+  4. More fragments if `voices.csv` supplies them (Hindi and Telugu originals with English beneath).
+  5. "One conversation at a time: more than 200 homebuyers on camera, in English, Hindi and Telugu."
+  6. The pipeline as a line of type: capture, transcribe, classify, cut, clear, deploy as ads.
   7. "Every clip is used under a consent framework I wrote."
 - 150+ and 200+ are never combined.
 
-**S3 Progression.** Six stages, per v3 §2.2.
-- Vasavi is included (the v3 default).
-- Keystone uses the resume wording: market share, average selling price, addressable market. Not "competitive intelligence".
-- Levonor proof: "Instagram: 2,677 to 6,718 followers in 21 months", plus an expandable detail on the June 2026 sponsorship. The growth is never called organic.
-
-**S4 Selected work.**
-
-| Row | Context | Evidence |
+**S4 Selected work.** Three rows, no preview images:
+| Row title | Context | Evidence |
 |---|---|---|
 | A finished floor, a year before handover. | Experience design for buyers who had already paid | 900+ visitors in two days |
 | Built for a glance, not a read. | Outdoor advertising, designed by subtraction | One message across three board formats |
 | Two registers, one buyer. | Campaign systems split by intent | Six axes, split on purpose |
 
-**S5 Visual identity.** "One company, expressed differently for every project it builds."
-- Egeira against a second project across four axes: type, imagery, message, execution.
-- Parent-brand constants shown once.
-- **No cleared second-project assets exist**, so this runs as a text-only comparison of decisions until the owner supplies them.
-- Egeira's own identity decisions are also needed from the owner. I will not infer them.
+**S5 Visual identity.** "One company, expressed differently for every project it builds." A text comparison of Egeira against a second project across type, imagery, message and execution, one reason per difference. Parent constants stated once, in words. No logos.
 
-**S6 Brand universe.** "Brands do not live in channels. People meet them across moments."
-- Seed: the finished-floor idea.
-- Branches that are confirmed and have an asset:
+**S6 Brand universe.** "Brands do not live in channels. People meet them across moments." Seed: the finished-floor idea. Branches drawn as lines and labels: OOH in three formats, the ad end card, the canopy walkway, wayfinding. Each node carries one line of evidence and the owner's role instead of an image. Pending branches (client communication, brochure and stationery, show-floor signage) appear only once confirmed.
 
-| Branch | Evidence image |
-|---|---|
-| OOH (three formats) | `ooh-cantilever` |
-| Ad end card | `ad-ad-show-floor` |
-| Canopy walkway | `canopy-messaging` |
-| Wayfinding | `reel-wayfinding` |
+**S7 Thinking.** The five observation-to-decision pairs. Pair 5 ("Remove the render") held until confirmed. No image.
 
-- Pending an asset and a role: client communication (emailers, WhatsApp flows), brochure and stationery, show-floor signage.
-- Every node states the owner's role: briefed, directed, produced with a partner, or made. **The owner must supply the role for each node.**
+**S8 Insight to story.** The five steps: raw detail ("An art wall, designed into the corridor of every home"; "every home" to confirm), observation (the unprompted quote), interpretation (proposed: the wall is where a family's life becomes visible), idea ("Every moment matters."), execution (children painted while their parents toured). No image: the completed L is the visual end of this section.
 
-**S7 Thinking.** Five observation-to-decision pairs, per v3 §2.2.
-- Pair 5 ("Remove the render") is **held until the owner confirms it**.
-- One image: `ad-ad-high-ceilings`.
-
-**S8 Insight to story.** The five-step distillation of the art wall, per v3 §2.2.
-- The interpretation line is a proposal awaiting approval.
-- "Every home" needs the owner's confirmation.
-- One image, placed last: `reel-kids-art`.
-
-**S9 Capabilities.** Four groups named for what they enable:
-- Finding the signal
-- Building the system
-- Making it tangible
-- Keeping it moving
-
-Each item links to on-page proof; any item without proof is cut. "Brand architecture" appears only if S5 demonstrates it.
+**S9 Capabilities.** Four groups, each capability linked to on-page proof; any without proof is cut.
 
 **S10 Contact.**
 - "Hiring for brand or marketing? Write to me."
-- Email ch.akhilmanohar1@gmail.com *(address to confirm)*, shown as selectable text with a copy button.
-- LinkedIn *(URL pending)*.
-- Resume downloads: ATS .docx and designed PDF *(files pending)*.
-- "Open to brand and marketing leadership roles."
-- The full name as the sign-off.
+- Email **ch.akhilmanohar1@gmail.com** and phone **+91 82201 51797**, both as selectable text with a copy button. The phone also links as `tel:+918220151797`.
+- LinkedIn *(URL pending)*. Resume (ATS, .docx) and Resume (designed, PDF) *(files pending)*.
+- "Open to brand and marketing leadership roles." Sign-off: the full name.
 
-**Case A: Mock floor launch, 6-7 December 2025.** Told as a walk. Each beat is a threshold (clip-path), with one image per beat:
+**Case pages (type only).**
+- **Case A, told as a walk:** each beat (Arrival, Threshold, Corridor, Home, Interaction, Response) is a full-width line of type that opens like a threshold (clip-path). Response sets the voices as live text. Proof and causality caveat as in v1.
+- **Case B, OOH by subtraction:** a board drawn in code as layout blocks carrying the real headline copy, labelled "illustrative reconstruction". Scroll or tap removes blocks until one message holds. Board sizes stated in feet as text.
+- **Case C, two registers:** a typographic switch; audience fixed, message swapped across six axes. Partners unnamed.
 
-| Beat | Image |
-|---|---|
-| Arrival | `reel-preview-easel` |
-| Threshold | `reel-lobby` |
-| Corridor | `reel-wayfinding` |
-| Home | `reel-art-wall` |
-| Interaction | `reel-kids-art` |
-| Response | Voices as live text; the campaign that followed: `ad-ad-show-floor` |
+## 5. Assets
 
-- Proof: 900+ / 150+ / referral leads 8.5 to 14.6 a month over five months / customer referrals qualified at 95.8%, the highest of any channel *(the owner must confirm this reversal of the earlier soft wording)*.
-- The causality caveat is stated on the page.
-- Allowed claim: "a first for a project of this scale in its micro-market."
+**Used: one.** The testimonial montage, as individual face tiles in a texture atlas.
 
-**Case B: OOH by subtraction.**
-- A scroll or tap sequence removes elements until one message holds: too much, interruption, removal, hierarchy, final board.
-- Final boards: `ooh-cantilever` (40 x 15 ft), `ooh-median-4x5` (4 x 5 ft), `ooh-unipole-top` (40 x 40 ft).
-- The "before" board is **built in code and labelled "illustrative reconstruction"**. None of the available `gen-*` boards is denser; the August 2025 board is not accessible.
-- Attention is described qualitatively. "1.5-3 seconds" appears only with a source.
+**Not used: all 32 files mapped in v1**, including the creatives, reels, quote frames, OOH boards, canopy files, renders, logos and the old `l-atlas` (made from reel frames, which is why its caption overclaimed).
 
-**Case C: Two registers, one buyer.**
-- The register switch keeps the audience fixed and changes the message; six axes.
-- **No valid creative pair is in hand.** `ad-ad-teaser` and `ad-ad-full-picture` are two frames of the same ad.
-- Until the owner supplies one offer-led and one lifestyle-led creative, the switch is typographic, with no images.
-- Partners are unnamed.
+**Needed from the owner:** the montage source. The stills pasted in chat earlier were never saved as files. Best is the individual testimonial frames, one face each; the montage screens themselves also work, and I slice them into tiles.
 
-## 5. Assets intentionally excluded
-
-| Asset | Reason |
-|---|---|
-| `l-atlas` and the L motif | Retired (v3 failure #2); the caption overclaimed |
-| `reel-quote-art-wall`, `-home-makers`, `-not-seen` | Quotes set as live text instead |
-| `ad-ad-teaser`, `ad-ad-full-picture` | Not two registers; same ad |
-| `gen-2025-03`, `gen-2026-02`, `gen-2026-05` | Not denser than the final boards, so they cannot serve as "before" |
-| `ooh-unipole-bottom` | Carries a different message; breaks "one message, three formats" |
-| `ooh-median-3x5` | A second median size with the same message; redundant |
-| `egeira-towers`, `egeira-courtyard` | Renders; no claim needs them; contradict the subtraction story |
-| `reel-kids-table`, `reel-corridor-generations` | Each duplicates a stronger beat image |
-| `canopy-full-view`, `canopy-graphics`, `canopy-print` | Production specs; illegible at page size, and clarify nothing a viewer needs. The canopy's words reach S6 through `canopy-messaging` |
-| `ad-ad-privacy` | S7 is limited to one image |
-| `egeira-logo-black/white` | Held for S5 constants only if S5 gets real assets |
-
-**Image budgets** (v3 §2.6), all within limit:
-
-| Page | Images | Budget |
-|---|---|---|
-| Home | 8: S4 previews 2 (`reel-lobby`, `ooh-median-4x5`), S6 nodes 4, S7 1, S8 1 | 8 |
-| Case A | 6 | 6 |
-| Case B | 3, plus the reconstruction | 5 |
-| Case C | 0 until supplied | 5 |
+**Tile counts:** 180 on desktop (an 18 x 10 screen), 80 on mobile (8 x 10). The caption states the exact number shown and where the faces come from.
 
 ## 6. Homepage wireframes
 
@@ -193,275 +120,204 @@ Desktop, 1440 wide. 12-column grid, 1280 maximum, margins `clamp(20px, 5vw, 72px
 S1  ┌────────────────────────────────────────────────────────┐
     │ ma.                                Work Contact Resume │ 72px, hides on scroll down
     │                                                        │
-    │   People believe what                        ░▒▓       │ artefact: <=25% vw, off-axis,
-    │   they can walk into.                        ▓▒░       │ still (DEFAULT)
-    │                                                        │
+    │   People believe what                                  │ type only
+    │   they can walk into.                                  │
     │   Step into the work →                                 │ 100dvh (only section allowed)
     └────────────────────────────────────────────────────────┘
-S2  │ A finished floor, a year                 ░ ░ ● ░       │ artefact sticky, now reacting
-    │ before handover.                         ░ ● ░ ░       │
-    │ 900+ visitors across two days.                         │
-    │ 150+ testimonials on the launch weekend. Step inside → │
-    │                         "Art wall is something..."     │ Signal 2 offset right, lower
-    │                         "I haven't seen in any..."     │ voices accumulate (pin <=150%)
-    │                     more than 200 homebuyers, EN HI TE │
-    │ capture ─ transcribe ─ classify ─ cut ─ clear ─ deploy │
-S3  │ 2017 Started with words.                   (light)     │ pinned desktop; each stage adds
+S2  │ 2017 Started with words.                   (light)     │ pinned desktop; each stage adds
     │   2019 Learned to read a market... + scope line        │ one layer; weight climbs
     │     2020 Built brands... + column + 2M+ mark           │
-    │       ... Levonor: Started building the whole system.  │ opens into S4
-S4  │ ────────────────────────────────────────────────────── │
-    │ A finished floor, a year before handover.    [preview] │ preview follows pointer
-    │ ────────────────────────────────────────────────────── │
-    │ Built for a glance, not a read.                        │
-    │ ────────────────────────────────────────────────────── │
-    │ Two registers, one buyer.                              │
-S5  │ One company, expressed...          [type|img|msg|exec] │ axis switch swaps both columns
-    │  Egeira                   │  Project 2                 │
-S6  │            ┌ OOH ─ end card                            │ lines draw on scroll
-    │  finished ─┼ canopy                                    │ node focus: one small image
-    │  floor     └ wayfinding ─ (pending nodes hidden)       │
-S7  │ A buyer who has already paid...      [flip]            │ observation <-> decision
-S8  │   An art wall, designed into the corridor.             │ display moment #2, pinned
-    │   → "Art wall is something that is very unique."       │ <=120%, stages compress
-    │   → Every moment matters.          [reel-kids-art]     │
-S9  │ Finding the signal   Building the system   ...         │ text links to proof anchors
+    │       ... Levonor: Started building the whole system.  │ the chapter door
+S3  │ A finished floor, a year before handover.              │ S3 a, text only
+    │ 900+ visitors across two days. 150+ on launch weekend. │
+    │ ┌────────────────────────────────────────────────────┐ │ S3 b: montage, full width
+    │ │ ▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪  18 x 10 face tiles             │ │ pin <=150%, 4 states
+    │ │ ▪▪▪▪▪ "Art wall is something that is very unique." │ │ quotes as live text
+    │ │ ▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪▪                                 │ │
+    │ └────────────────────────────────────────────────────┘ │
+    │ more than 200 homebuyers, EN HI TE; pipeline line      │ screen starts to shrink
+S4  │ ───────────────────────────────────    ┌───────────┐   │ montage docked, cols 9-12
+    │ A finished floor, a year before...     │ ▪▪▪▪▪▪▪▪▪ │   │ sticky; tiles loosen
+    │ Built for a glance, not a read.        │ ▪ ▪▪ ▪▪ ▪ │   │
+    │ Two registers, one buyer.              └───────────┘   │
+S5  │ One company, expressed...  [type|img|msg|exec]  ▪▪     │ tiles stream into the stem
+    │  Egeira                   │  Project 2          ▪▪     │
+S6  │  finished ─┬ OOH ─ end card                     ▪▪     │ branches draw in code;
+    │  floor     ├ canopy                             ▪▪▪▪▪▪ │ the foot forms
+    │            └ wayfinding                                │
+S7  │ A buyer who has already paid...      [flip]     ▪▪     │ L nearly whole, still
+S8  │   An art wall, designed into the corridor.      ▪▪     │ pinned <=120%
+    │   → "Art wall is something that is very unique."▪▪     │
+    │   → Every moment matters.                       ◣▪▪▪▪▪ │ chamfer cuts; L complete
+S9  │ Finding the signal   Building the system   ...         │ L parks small, scrolls away
 S10 │ Hiring for brand or marketing? Write to me.            │
-    │ ch.akhilmanohar1@gmail.com [copy]   LinkedIn   Resumes │
-    │ Manohar Akhil Chintalapati                             │
+    │ ch.akhilmanohar1@gmail.com [copy]  +91 82201 51797     │
+    │ LinkedIn   Resumes          Manohar Akhil Chintalapati │
     └────────────────────────────────────────────────────────┘
 ```
 Mobile, 390 wide.
 ```
 ┌──────────────────────┐
 │ ma.        Menu      │  bar hides on scroll down
-│ People believe what  │
+│ People believe what  │  type only
 │ they can walk into.  │
-│      ░▒▓ (small)     │  artefact below the line, 30% width
 │ Step into the work → │
 ├──────────────────────┤
-│ A finished floor...  │  tap = EXPERIENCE (no hover dependency)
-│ 900+ / 150+          │
-│ Step inside →        │
-├──────────────────────┤
-│ "Art wall is..."     │  voices reveal as progressive list,
-│ "I haven't seen..."  │  no pin; tap lights points
-│ more than 200 ...    │
-│ pipeline (vertical)  │
-├──────────────────────┤
-│ 2017 Started...      │  progression = linear stack,
-│ 2019 Learned...      │  layers expand on reveal
+│ 2017 Started...      │  progression = linear stack
 │ ...                  │
+│ Levonor: the whole   │  chapter door
 ├──────────────────────┤
-│ Row A  [thumb]       │  rows with inline thumbnail
-│ Row B  [thumb]       │  (no pointer preview)
-│ Row C                │
+│ A finished floor...  │  S3 a, text only
+│ 900+ / 150+          │
+│ ┌──────────────────┐ │  S3 b: montage 8 x 10,
+│ │▪▪▪▪▪▪▪▪          │ │  full width; quotes step
+│ │▪▪ "Art wall..."  │ │  under it, no pin
+│ └──────────────────┘ │
 ├──────────────────────┤
-│ S5 axis chips        │  swipe or chip switch
+│ Row A / Row B / Row C│  rows, no thumbnails
+│ S5 axis chips        │
+│  ▪▪ ▪ ▪▪  (stream)   │  checkpoint 2: short pin
 │ S6 vertical branches │
 │ S7 tap to flip       │
 │ S8 stepped stages    │
+│  ▪▪                  │  checkpoint 3: the L
+│  ◣▪▪▪▪               │  resolves inline
+├──────────────────────┤
 │ S9 grouped list      │
-│ S10 contact          │
+│ S10 email [copy]     │
+│ +91 82201 51797 [cp] │
 └──────────────────────┘
 ```
 
-## 7. Visual design system
+## 7. Visual system
 
-- **Composition:** editorial columns, asymmetry, controlled overlaps, small concentrated evidence, and quiet space.
-- **Height rule:** only S1 uses `100dvh`.
-- **Banned:** full-screen rectangles, nested boxes, bento grids, boxed paragraphs, decorative borders.
-- **Image treatment:** unframed, square-cornered (radius 2px), shown at the size their evidence needs. They enter through clip-path thresholds, not fades. Captions below, never overlaid.
-- **Graphic system:** hairlines (`#C8CCC5`) for decorative dividers only; the accent draws live connections in S6 and lit voice points.
+- **One visual layer:** the montage-to-L canvas. Everything else is type, hairlines and code-drawn diagrams.
+- **Composition:** editorial columns and quiet space. In the Levonor chapter, text holds columns 1-7 and the docked visual holds 9-12.
+- **Only S1 uses `100dvh`.** No bento grids, boxed paragraphs, nested boxes or decorative borders.
+- **Diagrams** (S6 branches, Case B board) use ink lines and stone labels; the accent only marks the live element.
 
 ## 8. Typography
 
-- **Faces:** TWK Everett for display, Atyp Text for body and UI. All seven files were checked by their internal names; Everett Light and Medium are genuine (Version 3.000). **WOFF2 web-kit files still needed.**
-- **Scale:** only two display moments, S1 and S8. Everything else is 3rem at most.
-- **Fluid ratios:** `clamp()` at 1.25 on mobile and 1.333 on desktop. Body text 17-18px, line-height 1.55, measure 65ch or less. Sentence case.
-- **S3 weight ladder:** Atyp Light, Atyp Regular, Atyp Medium, Everett Regular, Everett Medium, Everett Bold. Six genuine steps for six stages.
-- **Headings:** complete thoughts only. No split emphasis, no kicker labels.
+Unchanged from v1: TWK Everett (display), Atyp Text (body), two display-size moments (S1, S8), the six-step weight ladder in S2, body 17-18px at 1.55. With no images, type carries more: Case A beats set as large single lines are the one allowed exception to the 3rem cap on case pages, one at a time.
 
 ## 9. Colour logic
 
-Verified here with the WCAG formula.
+Unchanged: paper #EEEFEA, ink #1B1F21 (14.37:1), stone #62675F (5.01:1), hairline #C8CCC5 (decorative only), accent #006F64 (5.25:1), derived from the Egeira notch colour. In the visual, the accent marks two things only: tiles lit by the quote on screen, and the chamfer line when the L completes. The tiles themselves sit in a light duotone of ink and paper, so 180 faces read as one surface, not as a gallery.
 
-| Token | Hex | Contrast on paper | Role |
+## 10. The visual: montage to L
+
+| State | Where | Form | What it says |
 |---|---|---|---|
-| paper | #EEEFEA | | Base, cool off-white |
-| ink | #1B1F21 | 14.37:1 | Text |
-| stone | #62675F | 5.01:1 | Secondary text |
-| hairline | #C8CCC5 | 1.41:1 | Decorative dividers only |
-| accent | #006F64 | 5.25:1 | Focus rings, active states, lit voice points, one emphasis per case |
+| 0 Screen | S3 b | 18 x 10 grid of faces, full width, duotone | Many people, each on camera |
+| 1 Docked | S4 | The screen shrinks into columns 9-12, sticky, grid intact | The voices stay with the work |
+| 2 Loosened | S4 end to S5 | Gaps widen, tiles drift a few pixels out of line | Individuals, not a wall |
+| 3 Stem | S5 | Tiles stream into the vertical stroke, bottom up | Gathering |
+| 4 Foot | S6 to S7 | The horizontal stroke forms | A shape emerges |
+| 5 L | S8 end | The outer corner is cut on the diagonal (the chamfer, drawn in accent); caption appears | Many voices, one brand |
 
-- **Why this accent:** it is Egeira's logo-notch teal (#00A493, only 2.7:1 on paper) darkened to pass. The one colour on the site comes from the work itself.
-- **Accent rules:** 5% of a viewport or less. Never on headings, dividers or fills. Always paired with a second cue, because accent on ink is only 2.73:1.
-- **Theme:** single light theme; sections never invert.
-
-## 10. 3D artefact
-
-One draw call, precomputed position buffers, a `uProgress` shader tweened by GSAP. 8k points on desktop, 2.5k on mobile. DPR capped at 1.75. Renders on demand only.
-
-| State | Form | Trigger | Communicates | DOM text equivalent |
-|---|---|---|---|---|
-| DEFAULT | A compact stack of thin parallel layers of dense points; still | Load | A question | "A stack of layers." |
-| EXPERIENCE | The layers separate in depth into thresholds; a short camera dolly through them | Signal 1 hover, focus or tap | Space, movement, encounter | "The layers open into rooms." |
-| VOICES | The layers break into points; each revealed voice lights one point in accent; the field spreads, then clusters | Signal 2 engaged | Individuals becoming a system | "Each voice lights a point; the points form a field." |
-
-- **Size and position:** 25% of the viewport at most, off-axis. Sticky through S1 and S2, then it parks (stops rendering).
-- **Leaving a signal (proposed; the brief does not say):** EXPERIENCE returns to DEFAULT when Signal 1 loses hover or focus; on touch it holds until the next tap. Signal 2 moves the artefact to VOICES from either state.
-- **Motion limits:** no idle rotation. Pointer parallax of 3° or less on fine pointers only. Morphs take 900-1200ms, are interruptible, and retarget from current positions.
-- **Not allowed:** letterforms, logos, or an encoded count.
-- **Loading:** an SVG poster of DEFAULT first; Three.js imported after LCP.
-- **Fallback:** SVG versions of all three states, crossfading over 300ms (reduced motion, no WebGL, low power).
+- **Geometry:** the L sits on a 15 x 21 grid with a 6-wide stem and 6-high foot, which holds exactly 180 cells, one per desktop tile. Mobile uses 10 x 14 with 4-wide strokes: exactly 80 cells. Every tile on screen ends up in the L; none are dropped.
+- **Motion:** scrubbed by scroll (the owner's choice), steps only in the gaps between sections. Tiles turn slightly in depth as they travel (up to 25°), then flatten. No idle motion. Pointer does nothing.
+- **Caption at state 5:** "180 of the homebuyers who spoke on camera." (80 on mobile.) Only true once the tiles come from the testimonial montage.
+- **Build:** WebGL, one instanced draw call, a texture atlas (2048 px desktop, 1024 px mobile), per-tile start and end positions precomputed, one `uProgress` value driven by ScrollTrigger. Loaded when S2 enters view, so the S1 paint never waits for it.
+- **Poster and fallback:** a static AVIF of state 0 and one of state 5. Reduced motion, no WebGL or low power: state 0 in S3, state 5 in S8, a 300ms crossfade, nothing in between.
 
 ## 11. Scroll choreography
 
-Lenis: `lerp` about 0.12 and `syncTouch: false`, driven by `gsap.ticker`, with `lenis.on('scroll', ScrollTrigger.update)`. No scroll listeners.
+Lenis (`lerp` about 0.12, `syncTouch: false`) on the GSAP ticker feeding ScrollTrigger. No scroll listeners.
 
-| Where | Verb | Trigger | Duration and easing | Pin |
+| Where | Verb | Trigger | Detail | Pin |
 |---|---|---|---|---|
-| S1 lines | Reveal | Load | 1.2s total; out `(0.23,1,0.32,1)` | none |
-| S2 Signal 1 | Morph | Hover, focus or tap | 1000ms; in-out `(0.77,0,0.175,1)` | S2 ≤150%: 4 states, a change every 25% |
-| S2 voices | Separate, then Connect, then Resolve | Scroll | Voice 1, voice 2, fragments, conclusion + pipeline | (same pin) |
-| S3 stages | Separate | Scroll (desktop pin) | Each stage adds one layer; 6 states | desktop only |
-| S4 row | Morph (Taxi) | Activation | 700ms clip-path | none |
-| S6 branches | Connect | Scroll | Stroke draw, 600ms each | none |
-| S7 pair | Resolve | Tap or toggle | 400ms | none |
-| S8 stages | Compress, then Resolve | Scroll | 5 states | ≤120% |
-| Case B | Compress | Scroll or tap | Elements removed, one per 20% | pinned |
+| S1 lines | Reveal | Load | 1.2s; out | None |
+| S2 stages | Separate | Scroll | 6 states, each adds a layer | Desktop only |
+| S3 b | Reveal, then Connect | Scroll | Montage fades up; 3 quotes; 200+ line; pipeline | ≤150%, 4 states |
+| S3 to S4 | Compress | Scroll | Screen shrinks and docks | Part of the S3 pin |
+| S4 to S7 | Separate, then Connect | Scroll (scrub) | States 2 to 4, only between sections | Visual sticky, text scrolls |
+| S6 branches | Connect | Scroll | Lines draw, 600ms each | None |
+| S7 pair | Resolve | Tap or toggle | 400ms | None |
+| S8 stages | Compress, then Resolve | Scroll | 5 states; state 5 lands with "Every moment matters." | ≤120% |
+| Case B | Compress | Scroll or tap | One block removed per 20% | Pinned |
 
-Forbidden: fading every section upward, idle loops, scroll hijacking.
+Easing: out `cubic-bezier(0.23, 1, 0.32, 1)` for reveals, in-out `cubic-bezier(0.77, 0, 0.175, 1)` for morph steps. Forbidden: fading every section upward, idle loops, scroll hijacking.
 
-## 12. Microinteractions (v3 §3.6)
+## 12. Microinteractions
 
-- **Magnetism:** exactly 2 elements, "Step into the work" and the contact email. 8px maximum, fine pointers only, off under reduced motion.
-- **Primary CTA:** label shifts 2px and the underline grows on hover (150-200ms). Press: scale 0.97 over 120ms, then spring back. Focus: 2px accent ring with a 3px offset. Disabled: stone, no pull.
-- **Text links:** the underline grows from the left over 200ms.
-- **S4 rows:** hover makes the preview follow the pointer and steps the title up one weight. Press compresses 1%. Focus shows an accent outline plus the preview.
-- **Cursor:** no global cursor. Contextual previews only, in S4 rows and on the S2 signals.
-- **Navigation:**
-  - Monogram left; Work, Contact and Resume right; 72px tall at most.
-  - Chapter indicator lower left (GSAP/SVG equivalent of the Rive spec). It names the section on hover or focus and opens an arrow-key list.
+- **Magnetism:** "Step into the work" and the contact email only, 8px maximum, fine pointers only.
+- **Copy buttons** on email and phone: the label changes to "Copied" for 1.6s; if the clipboard is blocked, the text is selected instead.
+- **Buttons, links, S4 rows, navigation:** as in v1, minus the pointer preview (no images).
+- **S3 b:** the tiles belonging to the quote on screen brighten to full tone with an accent edge; the rest stay duotone.
 
-## 13. Case-study interaction model
+## 13. Case interaction model
 
-**One reusable template**, driven by `interaction_type`:
-- `spatial-sequence` (Case A): clip-path thresholds as you walk.
-- `subtraction` (Case B): elements removed on scroll or tap.
-- `register-switch` (Case C): audience fixed, message swapped.
-
-**Visible structure** follows Context, Observation, Decision, Execution and Evidence, written as full sentences, never as labels.
-
-**Taxi.js transitions:**
-- The row title or image becomes the case's opening frame (700ms clip-path).
-- Case-to-case moves use a directional wipe.
-- Back restores the scroll position.
-
-**On every swap:**
-1. Kill ScrollTriggers.
-2. Reset Lenis.
-3. Refresh after fonts and images decode.
-4. Re-initialise Webflow interactions.
-5. Move focus to the new h1 and announce it in `aria-live`.
-6. Prefetch the next case on hover or focus.
-
-**End of case:** previous and next controls.
+As v1: one template driven by `interaction_type` (spatial sequence, subtraction, register switch); the Taxi swap sequence (kill ScrollTriggers, reset Lenis, refresh after fonts decode, re-initialise Webflow interactions, focus the new h1 and announce it). Changes: no images anywhere, so the row title itself becomes the case's opening frame; the montage never appears on case pages.
 
 ## 14. Mobile adaptation
 
-- **Touch first:** tap is the trigger everywhere, and the artefact reacts to tap.
-- **Pins:** become progressive reveals (S2 voices as a list, S3 linear, S8 stepped).
-- **Other adaptations:** S4 rows show inline thumbnails instead of pointer previews. S6 branches run vertically. Case B steps by tap.
-- **Test widths:** 1440, 1024, 768 and 390, on Safari iOS and Chrome Android.
+- Touch first; tap replaces every hover.
+- The visual appears at three checkpoints instead of staying docked: S3 b (full width, no pin), a short pinned "stream" between S5 and S6, and the L resolving inline at the end of S8.
+- S2 is a linear stack; S8 steps; Case B steps by tap.
+- Test widths: 1440, 1024, 768, 390, Safari iOS and Chrome Android.
 
 ## 15. CMS architecture (Webflow)
 
-The collections follow v3 §3.9: Projects, Case Studies, Experience, Insights, Visual Assets, Voices, Metrics.
-- Case Studies carry the template fields (`central_thought`, `context`, `observation`, `decision`, `execution`, `evidence`, `interaction_type`, `theme_variables`, `related_work`), so a new case inherits the experience.
-- Every Visual Asset carries `media_purpose` (1-7), `attribution_role` and `clearance`.
-- Voices carry `consent_scope`. Only `portfolio-approved` voices render.
-- **Setup:** through the Webflow connector if it can reach the owner's site; otherwise the schema plus CSV imports.
-- **Code:** one Vite bundle (Lenis, GSAP, Taxi, the artefact loader), loaded site-wide with `defer`. Three.js is a dynamic import. Each animated element has exactly one owner.
+Collections: Projects, Case Studies, Experience, Insights, Voices, Metrics, and Montage Tiles.
+- **Montage Tiles:** `face` (image), `voice_ref` (link to Voices), `consent_scope`, `order`. Only `portfolio-approved` tiles enter the atlas.
+- **Voices:** `quote`, `original_language`, `original_text`, `consent_scope`.
+- The Visual Assets collection from v1 is dropped.
+- The atlas is generated from Montage Tiles at build time, not assembled in the browser.
 
-## 16. Performance strategy
+## 16. Performance
 
-| Metric | Budget |
+| Measure | Budget |
 |---|---|
-| LCP (mid Android, 4G) | < 2.5s; the LCP element is S1 type, not an image |
-| INP | < 200ms |
-| CLS | < 0.1; space reserved for every image and for the artefact poster |
-| Initial JS | < 120KB gzipped; Three.js (133KB gzipped, measured on a minified build of only the classes the artefact uses) loads after LCP |
-| Initial transfer | ≤ 1.2MB |
-| Home page total | ≤ 4MB excluding video |
-| Images | AVIF with WebP fallback, `srcset`, ≤ 2400px long edge |
-| Video | Click to play, ≤ 8MB, with a poster and captions |
-| Fonts | WOFF2, subset; only Everett Bold and Atyp Regular preloaded |
+| Largest paint | < 2.5s; S1 type, no image anywhere above S3 |
+| INP / CLS | < 200ms / < 0.1 (space reserved for the visual) |
+| JS before first paint | < 120KB gzipped; Three.js (133KB gzipped, measured) loads when S2 enters view |
+| Montage atlas | Desktop 2048 px AVIF, about 300-400KB *(estimate, to measure once the files arrive)*; mobile 1024 px, about 100-150KB |
+| Home page total | ≤ 1.5MB; the atlas is the only image |
+| Fonts | WOFF2, subset; Everett Bold and Atyp Regular preloaded |
 
-## 17. Accessibility strategy
+## 17. Accessibility
 
-- Semantic heading order, with one h1 per page.
-- Full keyboard access and visible 2px accent focus rings. The chapter list works with arrow keys, with no focus traps.
-- Alt text written from each image's `media_purpose`. `lang="hi"` and `lang="te"` on original quotes; captions on all footage.
-- The canvas is `aria-hidden`. Every artefact state is written in DOM text, and no information exists only in WebGL, hover or motion.
-- **Reduced motion genuinely changes the experience:** Lenis off, no pins, 2D artefact fallback, instant Taxi swaps, stepped Case B and S8.
+- The canvas is `aria-hidden`. Each state has a text equivalent in the page ("A screen of 180 homebuyers who spoke on camera." / "The same faces form the Levonor L.").
+- Quotes are live text with `lang` on originals.
+- Keyboard: everything reachable; copy buttons announce "Copied" through `aria-live`.
+- Reduced motion: no smooth scroll, no pins, the two-poster fallback.
+- Phone number marked up as a `tel:` link and readable as grouped digits.
 
-## 18. Experience test (v3 §1.4), per section
+## 18. Experience test
 
-| § | Narrative (now understands) | Visual (why here) | Interaction (reveals) | Motion (explains) | Space (why this much) | Copy (deletable?) |
+| § | Narrative | Visual | Interaction | Motion | Space | Copy |
 |---|---|---|---|---|---|---|
-| S1 | There is a way of thinking here | The artefact plants a question S2 answers | CTA only | Lines settle once: arrival | Only 100dvh on the site: first impression | Seven words; none removable |
-| S2 | People showed up; voices form a system | The artefact is the evidence's shape | Experience vs voices, by engagement | Morph: space vs scale | Strongest moment; pin ≤150% | Every line carries a fact |
-| S3 | Responsibility kept expanding | Layers accumulate | Pin steps stages | Separate: scope grows | One screen per two stages | Anchors are the story |
-| S4 | Three problems were solved | Previews prove the work is real | Preview; entry into case | Taxi morph: continuity | One row each; compact | Titles are full sentences |
-| S5 | The brand flexes by context | Juxtaposition beats a gallery | Axis switch shows the difference | Swap: comparison | Two columns; ≤4 images | One reason per difference |
-| S6 | One idea travels across moments | Nodes hold real evidence | Focus opens one proof | Connect: relationship | Visual release after analysis | Role per node, nothing else |
-| S7 | He observes before deciding | One ad shows a decision shipped | Flip reveals the decision | Resolve: cause, then effect | Five compact pairs | Pairs are the content |
-| S8 | Observation becomes communication | Only type, one image at the end | Scroll distils | Compress: many into one | Display moment #2; ≤120% | Five lines, all needed |
-| S9 | What he can carry | None | Links to proof | None | Summary; short | Items without proof cut |
-| S10 | How to reach him | None | Copy email; download resumes | Magnetic email only | Quiet close | Four lines |
+| S1 | A way of thinking | None; the line is the visual | The button | Lines settle once | Only 100dvh | Seven words |
+| S2 | Responsibility kept expanding | Type weight is the visual | Pin steps stages | Separate: scope grows | One screen per two stages | Anchors are the story |
+| S3 | People showed up and spoke | The only images on the site, earned by 200+ voices | Quotes light their faces | Reveal, then Connect | Strongest moment; pin ≤150% | Every line a fact |
+| S4 | Three problems were solved | The voices stay beside the work | Row opens the case | Compress into dock | One row each | Full-sentence titles |
+| S5 | The brand flexes by context | Tiles start to gather | Axis switch | Stream | Two columns | One reason per difference |
+| S6 | One idea travels | Drawn branches, no pictures | Node focus | Connect | Visual release | Role per node |
+| S7 | He observes before deciding | L waits, still | Flip | Resolve | Five pairs | Pairs are content |
+| S8 | Observation becomes communication | The L completes | Scroll distils | Compress, then Resolve | Second display moment | Five lines |
+| S9 | What he can carry | L leaves | Proof links | None | Short | Unproven items cut |
+| S10 | How to reach him | None | Copy email and phone | Magnetic email | Quiet close | Five lines |
 
-## 19. Where the two prompts differ, and what was applied
+## 19. Where the sources differ
 
-| Topic | Re-architecture prompt | Brief v3 (applied) |
+| Topic | Brief v3 | Applied (owner's revision wins) |
 |---|---|---|
-| 1.5-3 seconds | Stated as the insight | Only with a cited source; qualitative until then |
-| "Remove the render" | Given as an example | Held until the owner confirms |
-| Keystone "competitive intelligence" | Included | Banned; resume wording used |
-| Vasavi | Omitted | Included (default) |
-| 150+ wording | "Captured around the launch" | "150+ on the launch weekend" |
-| Four projects in identity | Egeira, NorthEast, Sumangal, Payanam | No cleared assets; Sumangal and Payanam pre-launch; text-only default |
+| L motif | Retired | Reinstated as the one visual, with an accurate caption |
+| Letterforms, logos, encoded counts in the visual | Not allowed | The L is allowed; the count is stated exactly in the caption |
+| 3D triggered by interaction, not scroll | Required | The morph is scrubbed by scroll |
+| Abstract artefact | Required | Retired; one visual only |
+| Images per page | Up to 8 home, 6 and 5 on cases | One atlas on home; none on cases |
+| Section order | Proof before progression | Progression first, so Levonor runs as one chapter |
+| Contact | Email only | Email and phone |
+| Earlier differences with the re-architecture prompt (1.5-3 seconds, "remove the render", Keystone wording, Vasavi, 150+ wording, four projects in S5) | As v1 | Unchanged |
 
-## 20. Defaults applied (v3 §3.14) and inputs still missing
-
-**Defaults applied:**
-- Opening proposition A.
-- Vasavi included.
-- Voices limited to the 3 cleared quotes, with the reveal shortened.
-- S5 text-only.
-- Case B qualitative, with a reconstruction.
-- Case C typographic, partners unnamed.
-- Keystone in resume wording.
-- S6 limited to 4 confirmed branches.
-- S8 line kept as proposed.
-- Self-initiated case hidden.
-- Rive delivered as GSAP/SVG equivalents plus a Rive brief.
+## 20. Inputs
 
 **Blocking the build:**
+1. The montage source: individual testimonial frames (ideally) or the montage screens, as files.
+2. Confirmation that the consent framework covers these faces on a personal portfolio, and that Levonor is fine with its L being used this way. Needed before publishing; the build can start with neutral placeholder tiles.
+3. Hosting: Webflow site, plan and domain, or approval to ship a standalone site.
+4. WOFF2 web-font files, and a private repo or fonts kept out of Git.
 
-| # | Input |
-|---|---|
-| 1 | Webflow site, plan and domain (or approval to ship static) |
-| 2 | WOFF2 web-kit fonts, and repo privacy or fonts kept out of Git |
-| 3 | Approval of this architecture |
-
-**Needed for full content (defaults hold until supplied):**
-- Resume files and LinkedIn URL.
-- `voices.csv` with 6 or more portfolio-approved voices (Hindi and Telugu originals).
-- Offer-led and lifestyle-led creatives.
-- The August 2025 board.
-- Egeira identity decisions, plus a second project's cleared assets.
-- S6 node roles, plus assets for the pending branches.
-- Confirmation of 95.8%, "remove the render", and "every home".
-- Confirmation of the contact email address.
-- A monogram, if one exists.
+**Needed for full content (defaults hold until then):** resume files, LinkedIn URL, `voices.csv`, Egeira identity decisions and a second project to compare, the owner's role on each S6 node, confirmation of 95.8%, "remove the render" and "every home", a monogram if one exists.
